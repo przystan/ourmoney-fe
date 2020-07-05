@@ -5,14 +5,14 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "jest",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm run lint && npm test"
+      "pre-push": "npm run lint"
     }
   },
   "lint-staged": {
@@ -28,6 +28,17 @@
     "src/**/*.*css": [
       "stylelint --fix",
       "git add"
+    ]
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "diagnostics": false
+      }
+    },
+    "preset": "jest-preset-angular",
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupJest.ts"
     ]
   },
   "private": true,
@@ -55,11 +66,8 @@
     "husky": "^4.2.5",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~5.0.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~3.0.2",
-    "karma-jasmine": "~3.3.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
+    "jest": "^26.1.0",
+    "jest-preset-angular": "^8.2.1",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
     "prettier-tslint": "^0.4.2",
