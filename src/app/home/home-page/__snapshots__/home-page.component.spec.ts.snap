@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePageComponent should match snapshot 1`] = `
+<app-home-page>
+  <p>
+     home-page works! 
+  </p>
+</app-home-page>
+`;

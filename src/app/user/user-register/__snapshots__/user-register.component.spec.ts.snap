@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserRegisterComponent should match snapshot 1`] = `
+<app-user-register>
+  <p>
+     user-register works! 
+  </p>
+</app-user-register>
+`;

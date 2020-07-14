@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-user-register',
@@ -7,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
       user-register works!
     </p>
   `,
-  styleUrls: ['./user-register.component.scss']
+  styleUrls: ['./user-register.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class UserRegisterComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+export class UserRegisterComponent {}

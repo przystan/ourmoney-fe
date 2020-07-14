@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-image:
+    linear-gradient(
+      var(--primary-background-color),
+      var(--secondary-background-color)
+    ),
+    url('/assets/images/user-background.jpg');
+  background-size: cover;
+}

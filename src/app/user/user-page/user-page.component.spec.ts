@@ -1,24 +1,25 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { MockComponent } from 'ng-mocks';
+import { RouterOutlet } from '@angular/router';
+import { Spectator, createComponentFactory } from '@ngneat/spectator';
 import { UserPageComponent } from './user-page.component';
+import { UserWelcomeComponent } from '../user-welcome/user-welcome.component';
 
 describe('UserPageComponent', () => {
-  let component: UserPageComponent;
-  let fixture: ComponentFixture<UserPageComponent>;
+  let spectator: Spectator<UserPageComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [UserPageComponent]
-    }).compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(UserPageComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  const createComponent = createComponentFactory({
+    component: UserPageComponent,
+    declarations: [
+      MockComponent(RouterOutlet),
+      MockComponent(UserWelcomeComponent)
+    ]
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  beforeEach(() => {
+    spectator = createComponent();
+  });
+
+  it('should match snapshot', () => {
+    expect(spectator.fixture).toMatchSnapshot();
   });
 });

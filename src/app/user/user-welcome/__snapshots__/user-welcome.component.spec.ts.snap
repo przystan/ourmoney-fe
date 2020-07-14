@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserWelcomeComponent should match snapshot 1`] = `
+<app-user-welcome>
+  <div />
+</app-user-welcome>
+`;
