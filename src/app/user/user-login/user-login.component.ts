@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-user-login',
@@ -7,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
       user-login works!
     </p>
   `,
-  styleUrls: ['./user-login.component.scss']
+  styleUrls: ['./user-login.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class UserLoginComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+export class UserLoginComponent {}

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserPageComponent should match snapshot 1`] = `
+<app-user-page>
+  <app-user-welcome /><div>
+    <router-outlet />
+  </div>
+</app-user-page>
+`;

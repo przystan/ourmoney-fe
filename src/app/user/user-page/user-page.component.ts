@@ -1,16 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-user-page',
   template: `
-    <p>
-      user-page works!
-    </p>
+    <app-user-welcome></app-user-welcome>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
   `,
-  styleUrls: ['./user-page.component.scss']
+  styleUrls: ['./user-page.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class UserPageComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+export class UserPageComponent {}

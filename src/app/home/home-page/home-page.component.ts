@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
@@ -7,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
       home-page works!
     </p>
   `,
-  styleUrls: ['./home-page.component.scss']
+  styleUrls: ['./home-page.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HomePageComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+export class HomePageComponent {}
