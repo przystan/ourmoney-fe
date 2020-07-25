@@ -1,9 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`UserLoginComponent should match snapshot 1`] = `
-<app-user-login>
-  <p>
-     user-login works! 
-  </p>
+<app-user-login
+  isPasswordHidden={[Function Boolean]}
+>
+  <h1
+    class="login-title"
+  >
+    Login
+  </h1><mat-form-field
+    appearance="legacy"
+    floatlabel="never"
+  >
+    <mat-label>
+      Username
+    </mat-label>
+    <input
+      matinput=""
+      placeholder="Your username"
+    />
+    <mat-icon
+      matprefix=""
+    >
+      person
+    </mat-icon>
+  </mat-form-field><mat-form-field
+    appearance="legacy"
+    floatlabel="never"
+  >
+    <mat-label>
+      Password
+    </mat-label>
+    <mat-icon
+      matprefix=""
+    >
+      lock
+    </mat-icon>
+    <input
+      matinput=""
+      placeholder="Password"
+      type="password"
+    />
+    <button
+      aria-label="Hide password"
+      aria-pressed="true"
+      mat-icon-button=""
+      matsuffix=""
+    >
+      <mat-icon
+        class="lock-icon"
+        inline="true"
+      >
+        visibility_off
+      </mat-icon>
+    </button>
+  </mat-form-field><button
+    class="login-btn"
+    color="accent"
+    mat-raised-button=""
+    type="submit"
+  >
+     Login 
+  </button><div
+    class="description"
+  >
+    Don't have an account? 
+    <a>
+      Sign up
+    </a>
+  </div>
 </app-user-login>
 `;

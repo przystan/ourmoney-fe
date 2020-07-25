@@ -1,5 +1,6 @@
 :host {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -11,4 +12,26 @@
     ),
     url('/assets/images/user-background.jpg');
   background-size: cover;
+}
+
+mat-icon {
+  width: 150pt;
+  height: 130pt;
+  font-size: 150pt;
+  color: white;
+  opacity: 0.8;
+}
+
+.title {
+  font-weight: lighter;
+  opacity: 0.9;
+  font-size: 4rem;
+  color: white;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.description {
+  margin-top: 2rem;
+  color: white;
+  opacity: 0.6;
 }

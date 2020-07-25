@@ -2,7 +2,9 @@
 
 exports[`UserPageComponent should match snapshot 1`] = `
 <app-user-page>
-  <app-user-welcome /><div>
+  <app-user-welcome /><div
+    class="forms"
+  >
     <router-outlet />
   </div>
 </app-user-page>

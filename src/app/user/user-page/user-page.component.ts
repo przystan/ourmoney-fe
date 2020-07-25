@@ -4,7 +4,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   selector: 'app-user-page',
   template: `
     <app-user-welcome></app-user-welcome>
-    <div>
+    <div class="forms">
       <router-outlet></router-outlet>
     </div>
   `,
