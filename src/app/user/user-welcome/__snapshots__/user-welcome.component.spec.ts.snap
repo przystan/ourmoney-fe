@@ -2,6 +2,16 @@
 
 exports[`UserWelcomeComponent should match snapshot 1`] = `
 <app-user-welcome>
-  <div />
+  <mat-icon>
+    account_balance_wallet
+  </mat-icon><div
+    class="title"
+  >
+    our money
+  </div><div
+    class="description"
+  >
+     Home budget management application 
+  </div>
 </app-user-welcome>
 `;
